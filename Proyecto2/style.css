@@ -1,0 +1,23 @@
+
+*{
+padding: 0;
+margin: 0;
+
+
+}
+body {
+    margin: 30px;
+    text-align: center;
+    background-color: rgb(240, 234, 234);
+
+
+}
+
+.contenido {
+    background-color: rgb(67, 36, 97);
+
+    
+}
+.articulo {
+    background-color:aqua;
+}
