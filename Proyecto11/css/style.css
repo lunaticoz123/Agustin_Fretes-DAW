@@ -1,12 +1,13 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #5749a163;
   color: #333;
 }
 
 h1 {
   text-align: center;
+  color: rgb(168, 61, 141);
 }
 
 .filters {
@@ -23,20 +24,21 @@ h1 {
 button {
   padding: 10px 15px;
   margin: 10px;
-  cursor: pointer;
+  cursor:crosshair;
 }
 
 #output {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-basis: 40px;
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(32, 207, 99, 0.616);
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,3,4);
+  margin: 20px;
   padding: 10px;
   width: 200px;
   text-align: center;
@@ -45,4 +47,5 @@ button {
 .card img {
   width: 100%;
   border-radius: 6px;
+
 }
