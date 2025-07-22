@@ -3,102 +3,245 @@
     margin: 0;
     box-sizing: border-box;
 }
+p {
+ color: aliceblue;
+}
+.hero{
+    margin: 6px;
+    padding: 3px;
+    background-image: url(../img/58872.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.hero_nav{
+    display: flex;
+    height: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.titulo_nav h3{
+    font-size: 2.3rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem;
+    width: 300px;
+    height: 70px;
+    color:rgb(101, 76, 203);
+    letter-spacing: 1.9px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 
-
-main{
-    text-align: center;
-    background-color: white;
-    width: 48%;
-    margin: auto;
-  
     
 }
-h1{
-    font-size: 3rem;
+.titulo_nav span{
+    color: rgb(81, 214, 159);
+
+}
+.titulo_nav:hover{
+    cursor: pointer;
+}
+.nav_nav{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 4rem;
+
+}
+
+.item_nav a{
     padding: 1.5rem;
-    text-align: left;
-   
-    overflow: visible;
-    width: 77%;
-    margin-left:460px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Seoe UI Symbol;
-
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h2{
-
-    font-weight: normal;
-    font-size: 28px;
-    font-family:'Times New Roman', Times, serif;
-    text-align: left;
-    padding: 3%;
-    margin: 1.5%;
-    position: relative;
-    right: 50px;
-}
-h3{
-    text-align: justify;
-  
-    padding: 1rem;
-    font-weight: normal;
-    letter-spacing: 0,5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-}
-button{
-    padding: 8px;
-    border-style:solid;
-    border-radius: 20px;
-    border-color: blue ;
-    background-color:transparent;
+.item_nav a span{
+    color: rgb(100, 51, 191);
+    background: none;
     
 }
 
-img{
-width: 100%;
-display: block;
-margin:0 auto;
-
-}
-.chicareportera{
-    width: 6%;
-    border-radius: 50%;
-    filter: grayscale(100%);
-
+.item_nav a:hover{
+    border-bottom: solid rgb(91, 172, 129);
+    cursor: pointer;
 }
 
 
-.hero_encabezado{
+.main_hero{
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.main_hero h1{
+    font-size: 3.5rem;
+    color: white;
+}
+
+
+.text-sec{
+    color: rgb(196, 174, 216);
+}
+.text-sec p{
+    width: 40vw;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    animation: arriba2 1.5s ease-in;
+}
+.btncaratula{
+    padding: 3rem;
+}
+.btncaratula button{
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    background:rgb(91, 172, 129);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: rgb(36, 102, 67) 2px 0px 2px 2px ;
+    margin:0 3rem 0 3rem;
+    border-style: none;
+}
+.btncaratula button:active{
+    background: rgb(24, 132, 74);
+}
+
+.btncaratula button a{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.galeria_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    background:rgba(123, 118, 118, 0.058);
+}
+.img_card{
+    width: 20vw;
+    height: 19vw;
+    margin: 5px;
+    padding: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
     
-    text-align: left;
+}
+.card{
+    display: block;
+width: 400px;
+height: 530px;
+margin: auto;  
+border-style:inset  ;
+box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+.main_hero h1{
+    animation: arriba3 2s ease-in;
 }
 
-.chica_barra_superior{
-
-display:inline-flex;
-width: 70%;
-position:relative;
-right: 120px;
-
+.card h3,h2 {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.hero_main{
-   
-}
-
-.footer_hero{
-    
-     text-align: center;
-     position: relative;
-     right: 230px;
-     padding: 2px;
-}
-span{
-    position:relative;
-    right: 145px;
+.card h2{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+.card .btncard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+.card .btncard a{
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(140, 34, 34);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.footer_hero{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    border: 3px solid white;
+}
+.inf_hero{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cobertura_heros{
+    color:rgb(253, 252, 253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cobertura_heros h1,a{
+    padding-bottom: 10px;
+}
+.red_hero{
+    color:rgb(238, 235, 242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
+.cobertura_herro{
+    color:rgb(246, 244, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+     
+}
+.derecho_reservados{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.991);
+    color: rgb(194, 221, 221);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@keyframes arriba3{
+  0%{
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes arriba2{
+    0%{
+      opacity: 0;
+      transform: translateX(500px);
+    }
+    100%{
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+
+  
 

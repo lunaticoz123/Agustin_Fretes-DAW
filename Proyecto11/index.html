@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rick and Morty - Personajes</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-  <h1>Rick and Morty API</h1>
-  <h1>API</h1>
-  <div class="filters">
-    <input type="text" id="name" placeholder="Nombre" />
-    <input type="text" id="status" placeholder="Estado (alive, dead, unknown)" />
-    <input type="text" id="species" placeholder="Especie" />
-    <input type="text" id="type" placeholder="Tipo" />
-    <input type="text" id="gender" placeholder="Género (female, male, genderless, unknown)" />
-    <button id="filterBtn">Buscar</button>
-  </div>
-  <button id="getAllBtn">Obtener..</button>
-  <div id="output"></div>
-  <script src="main.js"></script>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Buscaminas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css\style.css" >
+
+  </head>
+
+<body oncontextmenu="return false">
+  <div class=" tablero">
+
+      <p id="minas">
+  
+      </p>
+      <p id="juego-nuevo" onclick="nuevoJuego()">
+    New Game
+      </p>
+
+        <p id="timer">
+00
+        </p>
+
+      </div>
+
+    <table cellspacing="0" cellpadding="0" id="tablero">
+
+
+
+  
+    </table>
+
+    <form>
+  <select id="dificultad" >
+    <option value="1">FACIL</option>
+    <option value="2" >MEDIO</option>
+    <option value="3">DIFICIL</option>
+  </select>
+</form>
+
+<button onclick="obtenervalor()"> Seleccionar </button>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

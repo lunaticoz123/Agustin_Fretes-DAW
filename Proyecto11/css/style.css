@@ -1,51 +1,103 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #5749a163;
-  color: #333;
-}
+ * {
+      transition: all 1s;
+      box-sizing: border-box;
+    }
 
-h1 {
-  text-align: center;
-  color: rgb(168, 61, 141);
-}
+    body {
+      text-align: center;
+      font-family: calibri;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      background: lightsteelblue;
+    }
 
-.filters {
-  margin-bottom: 20px;
-  text-align: center;
-}
+    table {
+      background: rgb(0, 0, 0);
+      margin: 100px auto;
+    }
 
-.filters input {
-  margin: 5px;
-  padding: 8px;
-  width: 200px;
-}
+    td {
+    border: rgba(245, 5, 5, 25) 1px solid;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(26, 27, 27);
+    }
 
-button {
-  padding: 10px 15px;
-  margin: 10px;
-  cursor:crosshair;
-}
+    #juego-nuevo,td,#minas,#timer {
+    box-shadow: inset 3px 3px 0 0 rgba(255, 255, 255, 0.5),
+        inset -3px -3px 0 0 rgba(85, 81, 81, 0.993);
+    }
 
-#output {
-  display: flex;
-  flex-wrap: wrap;
+    #juego-nuevo,
+    #minas,
+    #timer{
+      padding: 10px;
+      margin: 10px;
+    }
+
+
+    #juego-nuevo {
+      background: rgb(231, 235, 232);
+      cursor: pointer;
+      letter-spacing: 3px;
+      font-family:fantasy;
+      border-radius: 20%;
+      width: 80px;
+      box-shadow: 1px 1px 0px 1px   rgb(17, 17, 17);;
+      
+
+
+    }
+    #juego-nuevo:active{
+        background: rgb(168, 182, 173);
+      color: rgb(206, 70, 70);
+      transition: background-color 0.5s ease;
+      
+    }
+
+    #minas {
+      background: black;
+      color: rgb(127, 218, 150);
+      width: 50px;
+      border-radius: 50%;
+    
+      
+    }
+    #timer{
+      background: black;
+      color: rgb(196, 61, 56);
+    
+    }
+
+    #Ajustes {
+      background: rgb(231, 235, 232);
+      cursor: pointer;
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 3px 3px 3px 3px black;
+      
+      
+      
+        }
+  .tablero {
+    background: rgb(79, 170, 110);
+    display: flex;
   justify-content: center;
-  flex-basis: 40px;
-}
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px black;
+  margin:5px;
 
-.card {
-  background-color: rgba(32, 207, 99, 0.616);
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,3,4);
-  margin: 20px;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-}
 
-.card img {
-  width: 100%;
-  border-radius: 6px;
 
-}
+  }
+  #dificultad{
+    text-align: center;
+    color: brown;
+    background-color: rgb(142, 209, 230);
+    width:120px;
+    font-family: cursive;
+      box-shadow: 1px 1px 1px 1px black;
+      margin: 10px;
+  }
